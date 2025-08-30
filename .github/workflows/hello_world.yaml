@@ -12,4 +12,9 @@ jobs:
     steps:
     - id: s00
       run: echo "Current time in GitHub is $(date)"
+    - id: s01
+      uses: mscoutermarsh/cowsays-action@master
+      with :
+        text: 'Moo moo cow!'
+        color: 'green'
       
